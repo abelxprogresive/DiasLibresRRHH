@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{39ADCE0C-FC0C-4BF3-9EBF-B268070339CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>rrhh2</RootNamespace>
+    <AssemblyName>rrhh2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>D icono Dimeiggs.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\10.10.231.70\Sistemas_Informatica\librerias\itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>\\10.10.231.70\Sistemas_Informatica\librerias\itextsharp\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>\\10.10.231.70\Sistemas_Informatica\librerias\itextsharp\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acerca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acerca.Designer.cs">
+      <DependentUpon>Acerca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizaEmpleado.Designer.cs">
+      <DependentUpon>ActualizaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregaCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregaCC.Designer.cs">
+      <DependentUpon>AgregaCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agregaDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregaDia.Designer.cs">
+      <DependentUpon>agregaDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregaMotivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregaMotivo.Designer.cs">
+      <DependentUpon>AgregaMotivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarCargo.Designer.cs">
+      <DependentUpon>AgregarCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregaEmpleado.Designer.cs">
+      <DependentUpon>AgregaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarArea.Designer.cs">
+      <DependentUpon>AgregarArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cambia Clave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cambia Clave.Designer.cs">
+      <DependentUpon>Cambia Clave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="ConsultaCcostocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaCcostocs.Designer.cs">
+      <DependentUpon>ConsultaCcostocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaRut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaRut.Designer.cs">
+      <DependentUpon>ConsultaRut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaTodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaTodos.Designer.cs">
+      <DependentUpon>ConsultaTodos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta_Usuario.Designer.cs">
+      <DependentUpon>Consulta_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearUsuario.Designer.cs">
+      <DependentUpon>CrearUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desbloquear_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desbloquear_Usuario.Designer.cs">
+      <DependentUpon>Desbloquear_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DesvinculaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesvinculaEmpleado.Designer.cs">
+      <DependentUpon>DesvinculaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminaUsuario.Designer.cs">
+      <DependentUpon>EliminaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformeSaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformeSaldo.Designer.cs">
+      <DependentUpon>InformeSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoSolicitud.Designer.cs">
+      <DependentUpon>IngresoSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quitarDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quitarDia.Designer.cs">
+      <DependentUpon>quitarDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quitarRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quitarRegistro.Designer.cs">
+      <DependentUpon>quitarRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReestableceContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReestableceContraseña.Designer.cs">
+      <DependentUpon>ReestableceContraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validar.cs" />
+    <EmbeddedResource Include="Acerca.resx">
+      <DependentUpon>Acerca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizaEmpleado.resx">
+      <DependentUpon>ActualizaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregaCC.resx">
+      <DependentUpon>AgregaCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregaDia.resx">
+      <DependentUpon>agregaDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregaMotivo.resx">
+      <DependentUpon>AgregaMotivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarCargo.resx">
+      <DependentUpon>AgregarCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregaEmpleado.resx">
+      <DependentUpon>AgregaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarArea.resx">
+      <DependentUpon>AgregarArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cambia Clave.resx">
+      <DependentUpon>Cambia Clave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaCcostocs.resx">
+      <DependentUpon>ConsultaCcostocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaRut.resx">
+      <DependentUpon>ConsultaRut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaTodos.resx">
+      <DependentUpon>ConsultaTodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta_Usuario.resx">
+      <DependentUpon>Consulta_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearUsuario.resx">
+      <DependentUpon>CrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desbloquear_Usuario.resx">
+      <DependentUpon>Desbloquear_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DesvinculaEmpleado.resx">
+      <DependentUpon>DesvinculaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminaUsuario.resx">
+      <DependentUpon>EliminaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformeSaldo.resx">
+      <DependentUpon>InformeSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoSolicitud.resx">
+      <DependentUpon>IngresoSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="quitarDia.resx">
+      <DependentUpon>quitarDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quitarRegistro.resx">
+      <DependentUpon>quitarRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReestableceContraseña.resx">
+      <DependentUpon>ReestableceContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dimeiggs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="D icono Dimeiggs.ico" />
+    <Content Include="icono dimeiggs2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
